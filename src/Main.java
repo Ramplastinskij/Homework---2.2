@@ -71,7 +71,52 @@ public class Main {
 
         System.out.println();
         System.out.println("Задача 2.6.");
+        short gramsToKg = 1000;
+        int weightBanana = 80;
+        int weightMilk = 105;
+        int weightIceCream = 100;
+        int weightEgg = 70;
 
+        int amoundBanana = 5;
+        int amoundMilk = 2;
+        int amoundIceCream = 2;
+        int amoundEgg = 4;
+        int result = (weightBanana*amoundBanana)+(weightEgg*amoundEgg)+(weightMilk*amoundMilk)+(weightIceCream*amoundIceCream);
+        long resultToKg = result / gramsToKg;
+        System.out.println(resultToKg);
 
+        System.out.println();
+        System.out.println("Задача 2.7.");
+        int needLoseWeight = 7;
+        int grToKilogram = 1000;
+        int needLoseGrams = needLoseWeight * grToKilogram;
+        int minGramsOneDay = 250;
+        int maxGramsOneDay = 500;
+        int minDays = needLoseGrams / maxGramsOneDay;
+        int maxDays = needLoseGrams / minGramsOneDay;
+        int avgDays = (minDays+maxDays)/2;
+        System.out.println("Минимальное количество дней: " + minDays);
+        System.out.println("Максимальное количество дней: " + maxDays);
+        System.out.println("Среднее количество дней: " + avgDays);
+
+        System.out.println();
+        System.out.println("Задача 2.8.");
+        int salaryMasha = 67_760;
+        int salaryDenis = 83_690;
+        int salaryKristina = 76_230;
+        byte percent = 10;
+        float newSalaryMultiply = 1 + (percent/100f);
+        int newSalaryMasha = (int) (salaryMasha*newSalaryMultiply);
+        int newSalaryDenis = (int) (salaryDenis*newSalaryMultiply);
+        int newSalaryKristina = (int) (salaryKristina*newSalaryMultiply);
+        int SalaryMashaYearDiff = (newSalaryMasha-salaryMasha) * 12;
+        int SalaryDenisYearDiff = (newSalaryDenis-salaryDenis) * 12;
+        int SalaryKristinaYearDiff = (newSalaryKristina-salaryKristina) * 12;
+        System.out.println("Маша теперь получает " + newSalaryMasha + " рублей."
+                + "Годовой доход вырос на " + SalaryMashaYearDiff + " рублей.");
+        System.out.println("Денис теперь получает " + newSalaryDenis + " рублей."
+                + "Годовой доход вырос на " + SalaryDenisYearDiff + " рублей.");
+        System.out.println("Кристина теперь получает " + newSalaryKristina + " рублей."
+                + "Годовой доход вырос на " + SalaryKristinaYearDiff + " рублей.");
     }
 }
