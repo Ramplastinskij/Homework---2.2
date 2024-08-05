@@ -27,15 +27,15 @@ public class Main {
         float f1 = 2.786f;
         short s1 = 569;
         short s2 = -159;
-        int i1 = 27897;
+        short s3 = 27897;
         byte b1 = 67;
-        System.out.println("Значение переменной b1 с типом byte равно:" + b1);
-        System.out.println("Значение переменной s1 с типом short равно:" + s1);
-        System.out.println("Значение переменной i1 с типом int равно:" + i1);
+        System.out.println("Значение переменной d1 с типом short равно:" + d1);
         System.out.println("Значение переменной l1 с типом long равно:" + l1);
         System.out.println("Значение переменной f1 с типом float равно:" + f1);
-        System.out.println("Значение переменной s2 с типом double равно:" + s2);
-        System.out.println("Значение переменной d1 с типом double равно:" + d1);
+        System.out.println("Значение переменной s1 с типом short равно:" + s1);
+        System.out.println("Значение переменной s2 с типом short равно:" + s2);
+        System.out.println("Значение переменной s3 с типом int равно:" + s3);
+        System.out.println("Значение переменной b1 с типом byte равно:" + b1);
 
         System.out.println();
         System.out.println("Задача 2.3.");
@@ -49,7 +49,7 @@ public class Main {
 
         System.out.println();
         System.out.println("Задача 2.4.");
-        short perfomance2minutes = 16;
+        byte perfomance2minutes = 16;
         int perfomanceMashine = perfomance2minutes/2;
         int perfomance20minutes = perfomanceMashine * 20;
         int perfomanceDay = perfomanceMashine * 60 *24;
@@ -62,9 +62,9 @@ public class Main {
 
         System.out.println();
         System.out.println("Задача 2.5.");
-        int totalTanksPaint = 120;
-        int tankWhite = 2;
-        int tankBraun = 4;
+        byte totalTanksPaint = 120;
+        byte tankWhite = 2;
+        byte tankBraun = 4;
         int totalClass = totalTanksPaint / (tankWhite+tankBraun);
         System.out.printf("В школе, где %d классов, нужно %d банок белой краски и %d банок коричневой краски. \n",
                 totalClass, totalClass*tankWhite,totalClass*tankBraun);
@@ -82,7 +82,7 @@ public class Main {
         int amoundIceCream = 2;
         int amoundEgg = 4;
         int result = (weightBanana*amoundBanana)+(weightEgg*amoundEgg)+(weightMilk*amoundMilk)+(weightIceCream*amoundIceCream);
-        long resultToKg = result / gramsToKg;
+        float resultToKg =(float) result / gramsToKg;
         System.out.println(resultToKg);
 
         System.out.println();
@@ -104,7 +104,7 @@ public class Main {
         int salaryMasha = 67_760;
         int salaryDenis = 83_690;
         int salaryKristina = 76_230;
-        byte percent = 10;
+        int percent = 10;
         float newSalaryMultiply = 1 + (percent/100f);
         int newSalaryMasha = (int) (salaryMasha*newSalaryMultiply);
         int newSalaryDenis = (int) (salaryDenis*newSalaryMultiply);
